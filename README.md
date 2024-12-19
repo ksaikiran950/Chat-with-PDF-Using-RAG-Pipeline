@@ -43,7 +43,7 @@ Prerequisites
 - Python 3.8 or higher
 - pip (Python package manager)
 
-### Required Libraries
+Required Libraries
 Install the necessary libraries using pip:
 bash
 pip install requests beautifulsoup4
@@ -89,7 +89,7 @@ with requests.Session() as session:
             scraped_data[url] = content
 
 
-### Step 2: Query Handling
+Step 2: Query Handling
 Run the query handler to search through the scraped content:
 
 python
@@ -112,27 +112,19 @@ else:
     print("No matching results found.")
 
 
-### Step 3: Response Generation
+Step 3: Response Generation
 This script provides the raw matching content. You can integrate it with an LLM like OpenAI's GPT for advanced response generation.
 
-## File Structure
-
-.
-|-- scrape_data.py           # Script for scraping website data
-|-- query_handler.py         # Script for handling user queries
-|-- requirements.txt         # List of required Python libraries
-|-- README.md                # Project documentation
 
 
-Future Enhancements
+## Future Enhancements
 - Add vector database support for efficient retrieval.
 - Integrate with LLMs for advanced response generation.
 - Enhance crawling to handle dynamic website content.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) for HTML parsing.
 - [Requests](https://docs.python-requests.org/) for HTTP requests.
-
